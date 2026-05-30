@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>index_c_7</title>
+  <style>
+    /* ピンク背景＋上ライン＋影のついた箱 */
+    .box {
+      background-color: #ffebe9;        /* 枠の背景ピンク */
+      border-top: 5px solid #ff7d6e;    /* 上のライン赤っぽい色 */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 影で少し浮かせる */
+      margin: 10px;
+      padding: 20px;
+    }
+
+    /* 子孫セレクタで文字の色と余白調整 */
+    .box p {
+      color: #ff7d6e;   /* 文字色も同じ赤っぽい色 */
+      margin: 0;        /* 上の余白をなくす */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p>このような影（box-shadow）をつけて少し浮いたように見せた枠を作成してください。</p>
+  </div>
+
+</body>
+</html>
