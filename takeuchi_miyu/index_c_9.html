@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> フレックスボックス</title>
+
+        <style>
+           body{
+            min-width: 380px; 
+           } 
+
+           header{
+            background-color: #ff69a3;
+            height: 50px;
+            text-align: center;
+           }
+
+           .①{
+            display: flex;
+           }
+
+           .②{
+            background-color: #00FF00;
+            width: 16px;
+            height: 400px;
+           }
+
+           .③{
+            background-color:transparent;
+            width:calc(100% - 32px);
+            height:400px;
+            text-align:center;
+            height:400px;
+           }
+
+           .④{
+            background-color:#00FF00;
+            width: 16px;
+            height: 400px;
+           }
+
+           footer{
+            background-color: #FFCC66;
+            height: 80px;
+            text-align: center;
+            height: 80px;
+           }
+
+        </style>
+    </head>
+
+        <body>
+            <header>
+                header
+            </header>
+            <div class="①">
+                <div class="②">
+
+            </div>
+            <div class="③">
+                contentA
+            </div>
+            <div class="④">
+
+            </div>
+        </div>
+        <footer>
+            footer
+        </footer>
+        </body>
+
+    
