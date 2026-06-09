@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>グリッドレイアウト</title>
+        <style>
+            .wrapper_1{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+
+            .box1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: #0000ff;
+            }
+
+            .box2{
+                background: #00ff00;
+            }
+
+            .box3{
+                background: #ff0000;
+            }
+
+              .row1{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .box4{
+                background: #00ffff;
+            }
+
+            .box5{
+                background: #ffffff;
+            }
+
+            .box6{
+                background: #ffff00;
+            }
+
+
+
+             .box7{
+                background: #800080;
+            }
+
+            .box8{
+                background: #ff00ff;
+
+            }
+
+             .box9{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: #808080;
+            }
+        </style>
+    </head>
+<body>
+    <div class="wrapper_1">
+        <div class="box1">herder</div>
+
+        <div class="box2">content-1</div>
+        <div class="box3">content-2</div>
+
+        <div class="row1">
+        <div class="box4">content-3-1</div>
+        <div class="box5">content-3-2</div>
+        <div class="box6">content-3-3</div>
+        </div>
+
+        <div class="box7">content-4-1</div>
+        <div class="box8">content-4-2</div>
+
+        <div class="box9">fooder</div>
+
+        </div>
+</body>
+</html>
