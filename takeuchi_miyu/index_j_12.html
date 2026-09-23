@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>メソッドやクラスを使う</title>
+    </head>
+    <body>
+        <script>
+            class Sample {
+              static version = '1.0';
+                static hello(){
+                    return 'Hello Static!';
+                }  
+            }
+
+            console.log(Sample.version);
+            console.log(Sample.hello());
+
+            function Who(name) {
+                this.name = name; 
+                }   
+
+                Who.prototype.getName = function() {
+                    return this.name; 
+                };
+
+                const person = new Who('tanaka');
+
+                console.log(person.getName());  // → tanaka
+        </script>
+    </body>
+</html>
