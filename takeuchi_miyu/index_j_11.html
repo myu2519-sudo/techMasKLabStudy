@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<<<<<<< HEAD
+    <head>
+        <meta charset="UTF-8">
+        <title>いろんなメソッド</title>
+    </head>
+    <body>
+        <script>
+           window.onload = function (){
+           function clock(){
+
+            const now = new Date();
+
+            let h = now.getHours();
+            let m = now.getMinutes();
+            let s = now.getSeconds();
+
+            if (h < 10) h = '0' + h;
+            if (m < 10) m = '0' + m;
+            if (s < 10) s = '0' + s;
+
+            console.log(`${h}:${m}:${s}`)
+           }
+
+            setInterval(clock,1000)
+           }
+        
+        </script>
+    </body>
+</html>
