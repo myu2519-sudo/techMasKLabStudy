@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>DOM(Document Object Model)</title>
+        </head>
+        <body>
+
+            <ul class="list-group">
+                <li class="list-group-item">100</li>
+                <li class="list-group-item">110</li>
+                <li class="list-group-item">120</li>
+                <li class="list-group-item">130</li>
+                <li class="list-group-item">140</li>
+            </ul>
+
+            <button id="change">変更</button>
+            <button id="reset">リセット</button>
+
+            <script>
+                var ul = document.querySelector('.list-group');
+                var listItems = ul.querySelectorAll('.list-group-item');
+                var originalValues = [];
+                listItems.forEach(function(li){
+                    originalValues.push(parseInt(li.textContent));
+                });
+
+                document.getElementById('change').addEventListener('click',function(){
+                    listItems = document.querySelectorAll('.list-group-item');
+
+                    for (var i = 0; i < listItems.length; i++){
+                        var num = parseInt(listItems[i].textContent);
+                        listItems[i].textContent = num * 10;
+                    }
+                });
+
+                document.getElementById('reset').addEventListener('click',function(){
+                    listItems = document.querySelectorAll('.list-group-item');
+
+                    listItems.forEach(function(item,index){
+                        item.textContent = originalValues[index];
+                    });
+                });
+            </script>
+        </body>
+    </html>
