@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>フォームの操作を理解しよう！</title>
+</head>
+
+<body>
+    <form name="myform">
+        <input type="text" name="num" value="0">
+        <button id="btn">ボタン</button>
+    </form>
+
+<script>
+  document.getElementById('btn').addEventListener('click',function(e){
+    e.preventDefault();//
+
+    let current = Number(document.myform.num.value);
+
+    document.myform.num.value = current + 1;
+  })
+</script>
+</body>
+</html>
