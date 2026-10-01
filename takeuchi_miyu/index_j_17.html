@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>JavaScript Canvas</title>
+
+  <style>
+    canvas {
+      background: #eef;
+    }
+
+  </style>
+
+  <script>
+
+    function draw() {
+      const canvas = document.getElementById('canvas_arc');
+      if (!canvas || !canvas.getContext) return;
+
+      const ctx = canvas.getContext('2d');
+
+      const x = 200;
+      const y = 150;
+      const r = 80;
+
+      const start = 5 * Math.PI / 180;
+      const end = 270 * Math.PI / 180;
+
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'black';
+
+      ctx.beginPath(); 
+      ctx.arc(x, y, r, start, end, false);
+      ctx.stroke();
+    }
+  </script>
+</head>
+
+<body onload="draw()">
+  <canvas id="canvas_arc" width="400" height="300" style="border:1px solid #999;"></canvas>
+</body>
+</html>
