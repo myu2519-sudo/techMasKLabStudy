@@ -1,0 +1,46 @@
+/* 全体の中央寄せ */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #F4E2D0; 
+  background: linear-gradient(
+    to bottom,
+    #D57B0E 0%,  
+    #F4E2D0 50%,   
+    #3A5635 100% 
+  );
+}
+
+/* タイマー枠 */
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(244, 226, 208, 0.25); 
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* タイトル */
+h1 {
+  font-size: 2.2rem;
+  color: #D57B0E; 
+}
+
+/* 時間表示 */
+#timer {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #3A5635; 
+}
+
+/* 終了メッセージ */
+#message {
+  font-size: 32px;
+  margin-top: 20px;
+  color: #D57B0E; 
+}
