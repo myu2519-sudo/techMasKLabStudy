@@ -1,5 +1,4 @@
 <?php
-
 // try-catchでエラー処理を行う
 try{
 
@@ -35,3 +34,4 @@ if(isset($_COOKIE["user"])){
     <input type="submit" value="送信">
 
 </form>
+
