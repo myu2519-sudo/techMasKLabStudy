@@ -30,5 +30,5 @@ $result = singleNumber($array); //関数を呼び出し
 
 // 結果を出力
 foreach ($result as $value) {
-    echo $value . PHP_EOL;
+    echo $value . "<br>";
 }
